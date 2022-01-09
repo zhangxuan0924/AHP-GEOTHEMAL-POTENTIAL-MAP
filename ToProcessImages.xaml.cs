@@ -17,8 +17,6 @@ using F.Pagess;
 
 namespace F
 {
-
-
     public partial class ToProcessImages : Window
     {
         Dataset dsToWrite;
