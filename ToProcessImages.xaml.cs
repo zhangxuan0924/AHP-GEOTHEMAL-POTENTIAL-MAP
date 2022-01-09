@@ -21,7 +21,6 @@ namespace F
 
     public partial class ToProcessImages : Window
     {
-        Dataset datasetNow;
         Dataset dsToWrite;
         Page11 page11;
         Page22 page22;
@@ -259,8 +258,6 @@ namespace F
                             }
                         }
                     }
-                    //bandWrite1 = dsToWrite.GetRasterBand(1);
-
                     double[] bufferArray=new double[page11.dsCurrent.RasterXSize * page11.dsCurrent.RasterYSize];
                     for (int i = 0; i < page11.dsCurrent.RasterXSize; i++)
                     {
