@@ -1,0 +1,46 @@
+﻿<Page x:Class="F.Pages.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      
+      xmlns:local="clr-namespace:F.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page1">
+
+    <Border CornerRadius="15" Background="#FFFFFEFF">
+        <Border.Effect>
+            <DropShadowEffect Direction="270" Opacity="0.2" Color="#FFA1887F" ShadowDepth="8"/>
+        </Border.Effect>
+        <Grid>
+            <StackPanel>
+                <TextBlock  x:Name="TextBlock"  Style="{StaticResource MaterialDesignDisplay2TextBlock}" Margin="0,40,0,0" HorizontalAlignment="Center" FontFamily="Arial" FontSize="48">
+                      Weights
+                </TextBlock>
+                <TextBox x:Name="FaultWeight"  materialDesign:HintAssist.Hint="The assigned weight of the factor"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center"  Margin="0, 10, 0,0"
+                          Width="300"  FontFamily="Microsoft Sans Serif" FontSize="16" 
+                          materialDesign:TextFieldAssist.UnderlineBrush="#E91E63" materialDesign:HintAssist.Foreground="#E91E63" materialDesign:HintAssist.FloatingScale="0.9" materialDesign:TextFieldAssist.TextBoxViewMargin="10,5,0,0" TextChanged="TextBox_TextChanged" AutomationProperties.Name="SoilWeight" />
+                <TextBox  x:Name="FaultWeight0" materialDesign:HintAssist.Hint="The assigned weight of the 1st class"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center"  Margin="0, 0, 0,9"
+                        Width="300" materialDesign:ColorZoneAssist.Mode="PrimaryDark"  FontFamily="Microsoft Sans Serif" FontSize="16"
+                          materialDesign:TextFieldAssist.UnderlineBrush="#E91E63" materialDesign:HintAssist.Foreground="#E91E63" materialDesign:HintAssist.FloatingScale="0.9" materialDesign:TextFieldAssist.TextBoxViewMargin="10,5,0,0" TextChanged="TextBox_TextChanged_1" AutomationProperties.Name="SoilWeight1" />
+                <TextBox x:Name="FaultWeight1"  materialDesign:HintAssist.Hint="The assigned weight of the 2nd class"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center"  Margin="0, 0, 0,9"
+                          Width="300" materialDesign:ColorZoneAssist.Mode="PrimaryDark"  FontFamily="Microsoft Sans Serif" FontSize="16" 
+                          materialDesign:TextFieldAssist.UnderlineBrush="#E91E63" materialDesign:HintAssist.Foreground="#E91E63" materialDesign:HintAssist.FloatingScale="0.9" materialDesign:TextFieldAssist.TextBoxViewMargin="10,5,0,0" TextChanged="TextBox_TextChanged_2" AutomationProperties.Name="SoilWeight2" />
+                <TextBox x:Name="FaultWeight2"  materialDesign:HintAssist.Hint="The assigned weight of the 3rd class"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center"  Margin="0, 0, 0,9"
+                          Width="300" materialDesign:ColorZoneAssist.Mode="PrimaryDark"  FontFamily="Microsoft Sans Serif" FontSize="16"
+                          materialDesign:TextFieldAssist.UnderlineBrush="#E91E63" materialDesign:HintAssist.Foreground="#E91E63" materialDesign:HintAssist.FloatingScale="0.9" materialDesign:TextFieldAssist.TextBoxViewMargin="10,5,0,0" TextChanged="TextBox_TextChanged_3" AutomationProperties.Name="SoilWeight3" />
+                <TextBox x:Name="FaultWeight3"  materialDesign:HintAssist.Hint="The assigned weight of the 4th class"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center"  Margin="0, 0, 0,9"
+                          Width="300" materialDesign:ColorZoneAssist.Mode="PrimaryDark"  FontFamily="Microsoft Sans Serif" FontSize="16" 
+                          materialDesign:TextFieldAssist.UnderlineBrush="#E91E63" materialDesign:HintAssist.Foreground="#E91E63" materialDesign:HintAssist.FloatingScale="0.9" materialDesign:TextFieldAssist.TextBoxViewMargin="10,5,0,0" TextChanged="TextBox_TextChanged_4" AutomationProperties.Name="SoilWeight4" />
+                <TextBox x:Name="FaultWeight4"  materialDesign:HintAssist.Hint="The assigned weight of the 5th class"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center"  Margin="0, 0, 0,9"
+                          Width="300" materialDesign:ColorZoneAssist.Mode="PrimaryDark"  FontFamily="Microsoft Sans Serif" FontSize="16" 
+                          materialDesign:TextFieldAssist.UnderlineBrush="#E91E63" materialDesign:HintAssist.Foreground="#E91E63" materialDesign:HintAssist.FloatingScale="0.9" materialDesign:TextFieldAssist.TextBoxViewMargin="10,5,0,0" TextChanged="TextBox_TextChanged_5" AutomationProperties.Name="SoilWeight5" />
+                <TextBox x:Name="FaultWeight5"  materialDesign:HintAssist.Hint="The assigned weight of the 6th class"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center"  Margin="0, 0, 0,9"
+                          Width="300" materialDesign:ColorZoneAssist.Mode="PrimaryDark"  FontFamily="Microsoft Sans Serif" FontSize="16" 
+                          materialDesign:TextFieldAssist.UnderlineBrush="#E91E63" materialDesign:HintAssist.Foreground="#E91E63" materialDesign:HintAssist.FloatingScale="0.9" materialDesign:TextFieldAssist.TextBoxViewMargin="10,5,0,0" TextChanged="TextBox_TextChanged_6" AutomationProperties.Name="SoilWeight6" />
+            </StackPanel>
+        </Grid>
+    </Border>
+</Page>

@@ -1,0 +1,41 @@
+﻿<Page x:Class="F.Pages.Page4"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      
+      xmlns:local="clr-namespace:F.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page4">
+
+    <Border CornerRadius="15" Background="#FFFFFEFF">
+        <Border.Effect>
+            <DropShadowEffect Direction="270" Opacity="0.2" Color="#FFA1887F" ShadowDepth="8"/>
+        </Border.Effect>
+        <Grid>
+            <StackPanel>
+                <TextBlock    Style="{StaticResource MaterialDesignDisplay2TextBlock}" Margin="0,38,0,0" HorizontalAlignment="Center" FontFamily="Arial" FontSize="48">
+                      Weights
+                </TextBlock>
+                <TextBox x:Name="SlopeWeight"  materialDesign:HintAssist.Hint="The assigned weight of the factor"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center"  Margin="0, 25, 0,10"
+                          Width="300"  FontFamily="Microsoft Sans Serif" FontSize="16" 
+                          materialDesign:TextFieldAssist.UnderlineBrush="#E91E63" materialDesign:HintAssist.Foreground="#E91E63" materialDesign:HintAssist.FloatingScale="0.9" materialDesign:TextFieldAssist.TextBoxViewMargin="10,5,0,0" TextChanged="TextBox_TextChanged" />
+                <TextBox x:Name="SlopeWeight1"   materialDesign:HintAssist.Hint="The assigned weight of the 1st class"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center"  Margin="0, 15, 0,10"
+                        Width="300" materialDesign:ColorZoneAssist.Mode="PrimaryDark"  FontFamily="Microsoft Sans Serif" FontSize="16"
+                          materialDesign:TextFieldAssist.UnderlineBrush="#E91E63" materialDesign:HintAssist.Foreground="#E91E63" materialDesign:HintAssist.FloatingScale="0.9" materialDesign:TextFieldAssist.TextBoxViewMargin="10,5,0,0" TextChanged="TextBox_TextChanged_1" />
+                <TextBox x:Name="SlopeWeight2"   materialDesign:HintAssist.Hint="The assigned weight of the 2nd class"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center"  Margin="0, 15, 0,10"
+                          Width="300" materialDesign:ColorZoneAssist.Mode="PrimaryDark"  FontFamily="Microsoft Sans Serif" FontSize="16" 
+                          materialDesign:TextFieldAssist.UnderlineBrush="#E91E63" materialDesign:HintAssist.Foreground="#E91E63" materialDesign:HintAssist.FloatingScale="0.9" materialDesign:TextFieldAssist.TextBoxViewMargin="10,5,0,0" TextChanged="TextBox_TextChanged_2" />
+                <TextBox x:Name="SlopeWeight3"   materialDesign:HintAssist.Hint="The assigned weight of the 3rd class"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center"  Margin="0, 15, 0,10"
+                          Width="300" materialDesign:ColorZoneAssist.Mode="PrimaryDark"  FontFamily="Microsoft Sans Serif" FontSize="16"
+                          materialDesign:TextFieldAssist.UnderlineBrush="#E91E63" materialDesign:HintAssist.Foreground="#E91E63" materialDesign:HintAssist.FloatingScale="0.9" materialDesign:TextFieldAssist.TextBoxViewMargin="10,5,0,0" TextChanged="TextBox_TextChanged_3" />
+                <TextBox x:Name="SlopeWeight4"   materialDesign:HintAssist.Hint="The assigned weight of the 4th class"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalAlignment="Center"  Margin="0, 15, 0,10"
+                          Width="300" materialDesign:ColorZoneAssist.Mode="PrimaryDark"  FontFamily="Microsoft Sans Serif" FontSize="16" 
+                          materialDesign:TextFieldAssist.UnderlineBrush="#E91E63" materialDesign:HintAssist.Foreground="#E91E63" materialDesign:HintAssist.FloatingScale="0.9" materialDesign:TextFieldAssist.TextBoxViewMargin="10,5,0,0" TextChanged="TextBox_TextChanged_4" />
+
+            </StackPanel>
+        </Grid>
+    </Border>
+</Page>
