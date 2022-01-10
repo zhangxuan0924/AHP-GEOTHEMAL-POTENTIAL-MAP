@@ -268,8 +268,8 @@ namespace F
                         }
                     }
 
-                            //数组的值写入待创建图像的波段
-                            bandWrite1.WriteRaster(0, 0, page11.dsCurrent.RasterXSize, page11.dsCurrent.RasterYSize, bufferArray, page11.dsCurrent.RasterXSize, page11.dsCurrent.RasterYSize, 0, 0);
+                    //数组的值写入待创建图像的波段
+                    bandWrite1.WriteRaster(0, 0, page11.dsCurrent.RasterXSize, page11.dsCurrent.RasterYSize, bufferArray, page11.dsCurrent.RasterXSize, page11.dsCurrent.RasterYSize, 0, 0);
                     System.Windows.MessageBox.Show("OK");
                     bandWrite1.FlushCache();
                     bandWrite1.Dispose();
